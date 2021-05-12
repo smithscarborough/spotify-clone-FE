@@ -12,6 +12,7 @@ export default function useAuth(code) {
     useEffect(() => {
         // post our code to the following route, which will allow it to be called on the server for us
         axios
+        // .post('http://localhost:3001/login', {
         .post('https://spotify-by-smith.herokuapp.com/login', {
             code,
         })
@@ -34,6 +35,7 @@ export default function useAuth(code) {
         // run this every time (i.e. in an interval) our expiresIn time is about to change, 
         const interval = setInterval(() => {
         axios
+        // .post('http://localhost:3001/refresh', {
         .post('https://spotify-by-smith.herokuapp.com/refresh', {
             refreshToken,
         })
