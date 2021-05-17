@@ -34,21 +34,21 @@ export default function useAuth(code) {
         // make sure that this refresh only happens right before our token expires by setting a setTimout
         // run this every time (i.e. in an interval) our expiresIn time is about to change, 
         const interval = setInterval(() => {
-        axios
-        // .post('http://localhost:3001/refresh', {
-        .post('https://spotify-by-smith.herokuapp.com/refresh', {
-            refreshToken,
-        })
-        .then(res => {
-            setAccessToken(res.data.accessToken)
-            setExpiresIn(res.data.expiresIn)
-        })
-        .catch(() => {
-            window.location = '/'
-        })
-        // refresh this expiresIn time one minute before it expires
-        // * 1000 to convert one minute/60 seconds to milliseconds
-    }, (expiresIn - 60) * 1000)
+            axios
+            // .post('http://localhost:3001/refresh', {
+            .post('https://spotify-by-smith.herokuapp.com/refresh', {
+                refreshToken,
+            })
+            .then(res => {
+                setAccessToken(res.data.accessToken)
+                setExpiresIn(res.data.expiresIn)
+            })
+            .catch(() => {
+                window.location = '/'
+            })
+            // refresh this expiresIn time one minute before it expires
+            // * 1000 to convert one minute/60 seconds to milliseconds
+        }, (expiresIn - 60) * 1000);
     // if for some reason our refreshToken or expiresIn changes before an actual refresh, clear the timeout so that we don't use an incorrect refresh token
     return () => clearInterval(interval)
         // whenever the refreshToken or the expiresIn token changes, then run this useEffect
