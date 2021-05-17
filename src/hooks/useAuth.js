@@ -12,7 +12,7 @@ export default function useAuth(code) {
     useEffect(() => {
         // post our code to the following route, which will allow it to be called on the server for us
         axios
-        // .post('http://localhost:3001/login', {
+        // .post('http://localhost:80/login', {
         .post('https://spotify-by-smith.herokuapp.com/login', {
             code,
         })
