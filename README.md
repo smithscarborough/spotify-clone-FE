@@ -1,6 +1,6 @@
 # Spotify-by-Smith - https://spotify-by-smith.netlify.app/
 
-## A simple Spotify music player for listening and getting lyrics to your favorite songs.
+## A simple Spotify music player for listening to and getting lyrics for your favorite songs.
 
 ### TECHNOLOGIES USED:
 * React.js
