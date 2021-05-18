@@ -12,19 +12,17 @@
 * Heroku (for back end deployment)
 * Netlify (for front end deployment)
 
+### Log in with your Spotify username and password:
 ![Screen Shot 2021-05-17 at 9 44 21 PM](https://user-images.githubusercontent.com/68121283/118582783-8ec24200-b759-11eb-8339-bfd1c1a11ea1.png)
 
 ### Search Spotify's API to browse music and get lyrics for all of your favorite songs:
-
 ![Screen Shot 2021-05-17 at 9 45 21 PM](https://user-images.githubusercontent.com/68121283/118583089-160fb580-b75a-11eb-9534-7cd5181b29aa.png)
 
 ### Select a song to auto-play and view its lyrics:
-
 ![Screen Shot 2021-05-17 at 9 45 58 PM](https://user-images.githubusercontent.com/68121283/118583257-638c2280-b75a-11eb-806b-a772c7d4e750.png)
 
 
 # Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
