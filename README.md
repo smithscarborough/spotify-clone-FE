@@ -1,4 +1,4 @@
-# Spotify-by-Smith - https://spotify-by-smith.netlify.app/
+# Spotify-by-Smith - [www.spotify-by-smith.com](https://spotify-by-smith.com/)
 
 ## A simple Spotify music player for listening to and getting lyrics for your favorite songs.
 
